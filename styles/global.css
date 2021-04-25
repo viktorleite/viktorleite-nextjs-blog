@@ -8,27 +8,47 @@ body {
   font-size: 18px;
 }
 
-* {
-  box-sizing: border-box;
-}
 
-.info {
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+}
+section {
+  height: 100vh;
+  width: 100%;
+  color: white;
+  background-color: #0b0b0b;
+ 
+  
+}
+.container{
+  width: 90%;
+  height: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   text-align: center;
 }
-.info h3{
-  font-size: 2rem;
+
+.info h1{
+  font-size: 3rem;
   margin-bottom: 1rem;
+  font-weight: 100;
 }
 
-a {
-  text-decoration: none;
-  color: #0070f3;
-  height: 50px;
-}
-a span {
-  line-height: 48px;
-  color: white;
-}
+.info h1 span { font-weight: 400; margin-left: 10px;}
+
+.red { background: #FE0098;
+background: -webkit-linear-gradient(to right, #FE0098 15%, #FF003D 100%);
+background: -moz-linear-gradient(to right, #FE0098 15%, #FF003D 100%);
+background: linear-gradient(to right, #FE0098 15%, #FF003D 100%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent; }
+
 
 @media only screen and (max-width: 780px) {
   html {
