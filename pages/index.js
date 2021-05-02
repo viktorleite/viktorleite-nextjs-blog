@@ -11,7 +11,7 @@ export default function Home() {
         <div class="container">
         <div class="nav">
           <ul>
-            <li><a href="" class="bt-contact"><span>Entrar em Contato</span></a></li>
+            <li><a href="" class="bt-contact"><span>Contact me</span></a></li>
           </ul>
         </div>
       </div>
