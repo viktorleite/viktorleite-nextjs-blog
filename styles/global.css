@@ -1,3 +1,9 @@
+*{ 
+  margin: 0; 
+  padding: 0; 
+  box-sizing:border-box; 
+}
+
 html,
 body {
   padding: 0;
@@ -8,47 +14,88 @@ body {
   font-size: 18px;
 }
 
+/*
+ * Class Container
+ */
 
-*{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  
-}
-section {
-  height: 100vh;
-  width: 100%;
-  color: white;
-  background-color: #0b0b0b;
- 
-  
-}
-.container{
+.container {
   width: 90%;
-  height: 100%;
   max-width: 1200px;
+  height: 100%;
   margin: 0 auto;
   display: flex;
   align-items: center;
-  justify-content: center;
+}
+/*
+ * Header
+ */
+header{
+  width: 100%;
+  height: 60px;
+  position: fixed;
+  top:0;
+  -webkit-backdrop-filter: saturate(180%) blur(5px);
+  backdrop-filter: saturate(180%) blur(5px);
+  border-bottom: 1px solid #eaeaea;
+  overflow: hidden;
+}
+header .container {
+  justify-content: flex-end;
+}
+header .container .nav ul li{
+  list-style:none;
+  display: inline-block;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+header .container .nav ul li a {
+  text-decoration: none;
+}
+
+header .container .nav .bt-contact {
+  padding: 10px 25px 10px 25px;
+  border-radius: 3px;
+  font-size: 0.97rem;
+  background: #000;
+  color: #fff;
+  width: 140px;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+/*
+ * Section
+ */
+section {
+  width: 100%;
+  height: 79vh;
+  margin-top: 60px;
+}
+
+section .container .info h1 {
+  max-width: 90%;
+  font-family: serif;
+  font-size: 2.0736rem;
+  font-weight: 500;
+  line-height: 1.15;
+  color: #000;
+}
+
+/*
+ * Footer Tag
+ */
+
+footer {
+  padding: 2rem 0;
+  width: 100%;
+  background: #fafafa;
+  border-top: 1px solid #eaeaea;
+}
+footer p{
+  font-size: 14px;
+  color: #666;
   text-align: center;
 }
-
-.info h1{
-  font-size: 3rem;
-  margin-bottom: 1rem;
-  font-weight: 100;
-}
-
-.info h1 span { font-weight: 400; margin-left: 10px;}
-
-.red { background: #FE0098;
-background: -webkit-linear-gradient(to right, #FE0098 15%, #FF003D 100%);
-background: -moz-linear-gradient(to right, #FE0098 15%, #FF003D 100%);
-background: linear-gradient(to right, #FE0098 15%, #FF003D 100%);
--webkit-background-clip: text;
--webkit-text-fill-color: transparent; }
-
 
 @media only screen and (max-width: 780px) {
   html {
